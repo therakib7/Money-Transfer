@@ -1,0 +1,6 @@
+{
+  "name": "echo",
+  "script": "laravel-echo-server",
+  "args": "start",
+  "max_memory_restart" : "200M"
+}

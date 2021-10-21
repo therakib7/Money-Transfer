@@ -1,0 +1,14 @@
+{
+    "name": "CT",
+    "alias": "CT",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\CT\\Providers\\CTServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

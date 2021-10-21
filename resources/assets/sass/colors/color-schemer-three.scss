@@ -1,0 +1,113 @@
+#dashboard-three {
+    .navbar {
+        background: #38414a;
+    }
+    .navbar {
+        .nav-link {
+            color: $color_white;
+        }
+        .nav-item {
+            color: rgba(255,255,255,.6);
+        }
+        .mainmenu {
+            .dropdown, .right-bar {
+                color: $color_white;
+            }
+        }
+    }
+    .sidebar {
+        background: #fff;
+        .info p, 
+        .badge, 
+        i, 
+        .brand-text,
+        .sidebar-menu .menu-item span {
+            color: #72777a;
+        }
+        .sidebar-header {
+            border-bottom: 1px solid #d8d8d8ba;
+        }
+        .user-panel {
+            border-bottom: 1px solid #d8d8d8ba;
+        }
+        .sub-menu {
+            background: #ecf0f585;
+        }
+        ul li.active {
+            > a {
+                background: none;
+                color: #00acc1 !important;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.03);
+                } 
+            }
+        }
+        ul li {
+            .badge {
+                background-color: #1abc9c;
+            }
+        }
+    }
+    .right-sidebar {
+        background: #fff;
+        .close-menu i {
+            background: #fff;
+            color: #72777a;
+            border-right: 1px solid #1a22262e;
+        }
+        .nav-tabs .nav-link {
+            color: #72777a !important;
+        }
+        .nav-tabs .nav-link.active,
+        .nav-tabs .nav-link:hover {
+            background-color: #1a22262e;
+            border: none;
+        }
+        .tab-pane {
+            p {
+                color: #72777a;
+            }
+        }
+        h4 {
+            color: #72777a;
+        }
+        #dashboard-theme {
+            color: #72777a;
+        }
+    }
+    .pelorous {
+        background: #1abc9c;
+    }
+    .amaranth {
+        background: #6658dd;
+    }
+    .amber {
+        background: #c0900d;
+    }
+    .amber:after,
+    .amber:before {
+        border-left-color: #a76b03;
+    }
+    .amaranth:after,
+    .amaranth:before {
+        border-left-color: #6658dd;
+    }
+    .card-body {
+        .chat-text.amber {
+            color: $color_white;
+        }
+    }
+    .card-footer {
+        .btn.amber {
+            color: $color_white;
+        }
+    }
+}
+
+#dashboard-three .sub-menu li a:hover, #dashboard-three .sub-menu li a.router-link-active {
+    i, span {
+        color: #333 !important;
+    }
+} 
+
+

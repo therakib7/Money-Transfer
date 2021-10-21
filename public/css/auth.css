@@ -1,0 +1,191 @@
+body {
+	background: #6A62D2;
+	font-family: 'Source Sans Pro';
+}
+.card {
+	padding: 25px 30px 30px;
+	border-radius: 7px;
+	background: #fff;
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.card .card-header {
+	font-size: 22px;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+	.card {
+		width: 440px; 
+	}
+}
+@media only screen and (max-width: 768px) {
+	.card {
+		width: 60%; 
+	}
+	.card .card-header {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.card {
+		width: 85%; 
+		padding: 15px 15px;
+	}
+	.card .card-header {
+		font-size: 14px;
+	}
+	.card button {
+		padding: 6px !important;
+	}
+}
+
+.card.card-reg {
+	transform: inherit;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 6%;
+} 
+
+.card-footer .btn-link.pull-right{
+	position: absolute;
+	right: 0;
+}
+.card .outline-group small {
+	color: #17a2b8;
+	top: -5px;
+	position: relative;
+	font-size: 14px;
+}
+.card .alert-danger ul {
+	padding: 0px 17px;
+	margin-top: 9px;
+	color: red;
+}
+.card .alert-danger ul li {
+	line-height: 25px;
+}
+.form-group label {
+	line-height: 25px;
+}
+.form-field {
+	padding: 15px !important;
+	width: 100%;
+	margin-top: 5px; 
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	background: #fff;
+	border: 1px solid #ced4da;
+	margin-left: -1px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.card button {
+	width: 100%;
+	padding: 15px;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	background: #746BDE;
+	color: #fff;
+	margin-top: 5px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	font-family: 'Source Sans Pro';
+}
+.outline-group {
+	position: relative;
+}
+.outline + label {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	margin-bottom: 0; 
+	line-height: 2;
+	color: #495057;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	transition: all .1s ease-in-out;
+	cursor: auto;
+}
+.outline::-webkit-input-placeholder {
+	color: transparent;
+}
+.outline:-ms-input-placeholder {
+	color: transparent;
+}
+.outline::-ms-input-placeholder {
+	color: transparent;
+}
+.outline::-moz-placeholder {
+	color: transparent;
+}
+.outline::placeholder {
+	color: transparent;
+}
+.outline:not(:placeholder-shown) ~ label {
+	font-size: 12px;
+	position: absolute;
+	top: -3px;
+	color: #495057;
+	line-height: 9px;
+	padding: 3px;
+	left: 10px;
+	background: #fff;
+}
+.card-footer {
+	margin: 1em auto;
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+} 
+.card-footer .btn-link {
+	color: #d4d3d3;
+	text-decoration: none;
+}
+
+input:focus {
+	outline: none;
+}
+input[type="checkbox"] {
+	margin: 0;
+	margin-right: 5px;
+}
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
+} 
+.outline:-webkit-autofill ~ label {
+	top: -3px; 
+}
+/* loging */
+.invalid-feedback strong {
+	color: red;
+	position: relative;
+	top: -3px;
+}
+.input-group {
+	position: relative;
+}
+.input-group-append {
+	position: absolute;
+	right: 15px;
+	top: 18px;
+	font-size: 15px;
+	color: #a09e9efa;
+	cursor: pointer;
+}
+

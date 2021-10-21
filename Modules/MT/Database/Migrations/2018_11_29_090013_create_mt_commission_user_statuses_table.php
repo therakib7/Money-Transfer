@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateMTCommissionUserStatusesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('mt_commission_user_statuses', function (Blueprint $table) {
+            $table->increments('id');  
+            $table->unsignedInteger('user_id')->index();  
+            $table->boolean('status');  
+            $table->unsignedInteger('updated_by');   
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('mt_commission_user_statuses');
+    }
+}

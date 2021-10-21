@@ -1,0 +1,101 @@
+#dashboard-four {
+    .navbar {
+        background: #38414a;
+    }
+    .navbar {
+        .nav-link {
+            color: $color_white;
+            &:hover {
+               color: #ddd; 
+            }
+        }
+        .nav-item {
+            color: rgba(255,255,255,.6);
+        }
+        .mainmenu {
+            .dropdown, .right-bar {
+                color: $color_white;
+            }
+        }
+    }
+    .sidebar {
+        background: #3F65D3;
+        .info p, 
+        .badge, 
+        i, 
+        .brand-text,
+        .sidebar-menu .menu-item span {
+            color: #fff;
+        }
+        .sidebar-header {
+            border-bottom: 1px solid #dcdcdc52;
+        }
+        .user-panel {
+            border-bottom: 1px solid #dcdcdc52;
+        }
+        .sub-menu {
+            background: #0e266d40;
+        }
+        ul li.active {
+            > a {
+                background: none;
+                color: #00acc1 !important;
+            }
+        }
+        ul li {  
+            .badge {
+                background-color: #1abc9c;
+            }
+        }
+    }
+    .right-sidebar {
+        background: #3F65D3;
+        .close-menu i {
+            background: #3F65D3;
+        }
+        .nav-tabs .nav-link.active,
+        .nav-tabs .nav-link:hover {
+            background-color: #0b18b585;
+            border: none;
+        }
+    }
+    
+    .pelorous {
+        background: #3F65D3;
+    }
+    .amaranth {
+        background: #36B9CC;
+    }
+    .amber {
+        background: #a76b03;
+    }
+    .amber:after,
+    .amber:before {
+        border-left-color: #a76b03;
+    }
+    .amaranth:after,
+    .amaranth:before {
+        border-left-color: #36B9CC;
+    }    
+    .bg-success:after,
+    .bg-success:before {
+        border-left-color: #1CC88A;
+    }
+    .card-body {
+        .chat-text.amber {
+            color: $color_white;
+        }
+    }
+    .card-footer {
+        .btn.amber {
+            color: $color_white;
+        }
+    }
+}
+#dashboard-four .sub-menu li a:hover, #dashboard-four .sub-menu li a.router-link-active {
+    i, span {
+        color: #2c2c2c !important;
+    }
+} 
+
+

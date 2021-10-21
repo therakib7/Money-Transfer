@@ -1,0 +1,75 @@
+#dashboard-five {
+    .sidebar {
+        background: #56086d !important;
+        .info p, 
+        .badge, 
+        i, 
+        .brand-text,
+        .sidebar-menu .menu-item span {
+            color: #fff;
+        }
+        .sidebar-header {
+            border-bottom: 1px solid #dcdcdc52;
+        }
+        .user-panel {
+            border-bottom: 1px solid #dcdcdc52;
+        }
+        .sub-menu {
+            background: #3e074e4d;
+        }
+        ul li.active {
+            > a {
+                background: none;
+                color: #00acc1 !important;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.12);
+                }
+            }
+        }
+        ul li {
+            a:hover{
+               
+            } 
+            .badge {
+                background-color: #1abc9c;
+            }
+        }
+    }
+    .right-sidebar {
+        background: #56086d;
+        .close-menu i {
+            background: #56086d;
+        }
+        .nav-tabs .nav-link.active,
+        .nav-tabs .nav-link:hover {
+            background-color: #2d053ab8;
+            border: none;
+        }
+    }
+    .pelorous {
+        background: #56086d;
+    }
+    .amaranth {
+        background: #9181F6;
+    }
+    .amber {
+        background: #F29B36;
+    }
+    .amber:after,
+    .amber:before {
+        border-left-color: #F29B36;
+    }
+    .amaranth:after,
+    .amaranth:before {
+        border-left-color: #9181F6;
+    }    
+    .bg-success:after,
+    .bg-success:before {
+        border-left-color: #54D3E4;
+    }
+}
+#dashboard-five .sub-menu li a:hover, #dashboard-five .sub-menu li a.router-link-active {
+    i, span {
+        color: #3c8dbc !important;
+    }
+}  

@@ -1,0 +1,25 @@
+{
+    "name": "MT / Money Transfer",
+    "description": "",
+    "authors": [
+        {
+            "name": "Rakibul Hasan",
+            "email": "therakib7@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MT\\Providers\\MTServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MT\\": ""
+        }
+    }
+}

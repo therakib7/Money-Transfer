@@ -1,0 +1,100 @@
+button {
+    font-size: 11px;
+    padding: 12px 30px;
+	color: $color_white;
+    line-height: normal;
+	@include prefixed(transition, all .25s ease);
+}
+input[type="button"] {
+	@extend button;
+}
+input[type="reset"] {
+	@extend button;
+}
+input[type="submit"] {
+	@extend button;
+	background: none;
+	color: $color_black;
+	padding: 6px 45px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+	&:focus {
+		outline: none;
+	}	
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+button {
+	a {
+		color: $color_white;
+	}
+}
+.search-form, .searchform {
+	.btn {
+		@include prefixed(border-radius, 0);
+		&:hover {
+			color: $color_white;
+			text-decoration: none;		
+		}
+		&:focus {
+			background: transparent;
+			color: $color_white;
+			outline: 0 none;
+		}
+		&:active:focus {
+			background: transparent;
+			color: $color_white;
+			outline: 0 none;
+		}
+	}
+}
+.btn {
+	@include prefixed(border-radius, 0);
+}
+
+// More link
+.more-link {
+	@include prefixed(transition, all 0.25s ease);
+	&:hover, &:focus, &:active:focus {
+		color: $color_white;
+		text-decoration: none !important;
+	}
+}
+.btn-sm.bg-success {
+	color: #fff;
+	i {
+		margin-right: 3px;
+	}
+}
+.btn-default {
+	background: #ddd;
+	color: #555 !important;
+}
+
+.table-button:hover {
+	background-color: #fff !important;
+	border-color: #fff !important;
+}
+.table-actions {
+	.float-left {
+		.btn-info {
+			position: relative;
+			top: -1px;
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,26 @@
+.site-nav {
+    .mainmenu {
+        > li {
+            float: left;
+            list-style: none;
+            position: relative;
+            > a {
+                display: block;
+                padding: 15px 15px;
+                font-size: 14px;
+                line-height: normal;
+                font-weight: 600;
+                letter-spacing: 0.025em;
+                font-family: $font_body;
+                &:hover {
+                    color: #969595;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

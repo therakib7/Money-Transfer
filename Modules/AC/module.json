@@ -1,0 +1,14 @@
+{
+    "name": "AC",
+    "alias": "AC",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\AC\\Providers\\ACServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

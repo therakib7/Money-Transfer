@@ -1,0 +1,282 @@
+/*--------------------------------------------------------------
+## Main Sidebar
+--------------------------------------------------------------*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    //z-index: 9999;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.4s;
+    box-shadow: 0 14px 28px rgba(0,0,0,.25);
+    background: #222D32;
+    @media only screen and (max-width: 992px) {
+        left: -250px;
+        transition: all 0.4s;
+    }
+}
+.left {
+     left: 0px !important;
+}
+.sidebar .sidebar-header {
+    height: 58px;
+    border-bottom: 1px solid #4b545c;
+    padding: 10px 4px;
+    .brand-link  {
+        color: rgba(255,255,255,.8);
+    }
+   .brand-image {
+       float: left;
+       line-height: .8;
+       max-width: 38px;
+       margin-right: .5rem;
+       box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+       border-radius: 50%;
+   }
+    .brand-text {
+       font-size: 20px;
+       position: absolute;
+       line-height: 38px;
+       white-space: nowrap;
+    }
+}
+.sidebar-menu {
+    .sub-menu {
+        //display: none;
+        list-style: none;
+        padding-left: 0px;
+        margin: 0;
+        background: #2c3B41;
+        padding: 5px 0;
+        li {
+            a {
+                padding: 0px 12px 0px 15px !important;
+                font-size: 14px !important;
+                span {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    letter-spacing: 0.3px;
+                }
+            }
+        }
+    }
+}
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    .header {
+        color: #4b646f;
+        background: $color_black_pearl;
+        padding: 10px 25px 10px 15px; 
+        font-size: 14px;
+    }
+    .menu-item {
+        a {
+            color: $color_heather;
+            display: block;
+            white-space: nowrap;
+            position: relative;
+            .icon-money, .icon-tasks {
+                font-size: 14px;
+            }
+        }
+
+        .right {
+            position: absolute;
+            right: 0px;
+            top: 4px; 
+        }
+        .icon-angle-down {
+            transform: rotate(-90deg);
+            transition: transform ease-in-out .3s;
+        }
+    }
+}
+
+.sidebar.active {
+    .sidebar-header {
+        strong {
+            height: 40px;
+        }
+    }
+    .sidebar-menu {
+        ul {
+            ul {
+                top: 0px !important;
+                border-top-right-radius: 5px !important;
+                li {
+                    span {
+                        display: inline-block;
+                        margin-bottom: 0;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar-menu {
+        .sub-menu {
+            li {
+                a {
+                    font-size: 14px !important;
+                }
+                i {
+                    opacity: 1;
+                    z-index: 999;
+                    position: relative;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    &:hover {
+        @media only screen and (min-width: 992px) {
+           min-width: 250px !important;
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        min-width: 220px;
+        max-width: 220px;
+    }
+    @media only screen and (min-width: 992px) {
+        min-width: 75px;
+        max-width: 75px;
+    }
+}
+.user-panel {
+    padding-top: 10px;
+    border-bottom: 1px solid #4b545c;
+    height: 60px;
+    position: relative;
+    padding-left: 5px;
+    cursor: pointer;
+    .image {
+        .img-circle {
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+        }
+    }
+    .info {
+        position: absolute;
+        top: 14px;
+        left: 50px;
+        p {
+            color: #c2c7d0;
+            font-size: 15px;
+            white-space: nowrap;
+            line-height: 20px;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.sidebar.active {
+    .info p, 
+    .badge, 
+    .fa-angle-down, 
+    .brand-text,
+    .sidebar-menu span,
+    .sidebar-menu .menu-item span {
+        opacity: 0;
+        display: none;
+        @media only screen and (max-width: 992px) {
+             display: inline-block;
+             opacity: 1;
+        }
+    }
+    &:hover {
+        .info p, 
+        .badge, 
+        .fa-angle-down, 
+        .brand-text,
+        .sidebar-menu span,
+        .sidebar-menu .menu-item span {
+           opacity: 1;
+            display: inline-block;
+        }
+
+    }
+}
+.sidebar ul li.active {
+    > a {
+        background: #007bff;
+        color: $color_white;
+        &:hover {
+            background-color: #007bff;
+        }
+    }
+}
+.sidebar.left {
+    @media only screen and (max-width: 992px) {
+        min-width: 220px;
+        max-width: 220px;
+    }
+}
+.sidebar-menu > li > a {
+    padding: 3px 5px 5px 15px;
+    font-size: 15px !important;
+    &:hover {
+        background: #1e282c;
+    }
+}
+
+.badge {
+    color: $color_white;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+.roted {
+    -webkit-transition: rotate(0deg)!important;
+    -o-transition: rotate(0deg)!important;
+    transform: rotate(0deg)!important;
+   -webkit-transition: transform .5s ease;
+   -o-transition: transform .5s ease;
+   transition: transform .5s ease;
+}
+.sidebar-scroll-content {
+    height: calc(100vh - 3.65rem);
+    overflow-y: auto;
+    overflow-x: hidden; 
+    /* @media only screen and (max-width: 768px) {
+        height: calc(100vh - 6.65rem);
+    } */
+}
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+.sidebar ul li a i:nth-child(1) {
+    display: inline-block;
+    width: 15px;
+} 
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.sidebar-scroll-content .dropdown-menu {
+    position: absolute !important;
+    width: 220px;
+    left: 0;
+    top: 58px;
+    .user-header {
+        padding: 15px;
+        p {
+            font-size: 15px;
+        }
+    }
+}
+.sidebar-scroll-content .dropdown-menu.show {
+    display: none;
+}
+@media only screen and (max-width: 992px) {
+   .sidebar-scroll-content .dropdown-menu.show {
+       display: block !important;
+   }
+}
+
+
+

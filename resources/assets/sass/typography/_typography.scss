@@ -1,0 +1,17 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: white;
+	font-family: $font_body;
+	font-size: $base_font_size;
+	font-weight: normal;
+	line-height: $font_line_height_body;
+	color: $color_text_main;
+}
+
+@import "headings";
+
+@import "copy";

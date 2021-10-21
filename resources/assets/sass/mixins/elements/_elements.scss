@@ -1,0 +1,149 @@
+q {
+	quotes: "" "";
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+blockquote {
+	line-height: 1.75em;
+	color: #6f6f6f;
+	p {
+		padding: 0 0 20px 40px;
+		margin-bottom: 10px;
+		position: relative;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		cite {
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+	footer {
+		margin-left: 35px;
+		position: relative;
+		top: 6px;
+		margin-top: -15px;
+	}
+	cite, a, span {
+	    padding: 0 1.2em;
+		font-size: 0.8em;
+		font-weight: 500;
+		font-style: normal;
+		position: relative;
+	}
+	cite {
+		display: block;
+	}
+	cite::before {
+	    content: "--";
+	    padding-right: 5px;
+	}
+}
+blockquote .small::before,
+blockquote footer::before,
+blockquote small::before {
+	margin-left: 18px;
+} 
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+.source-from {
+	color: #0056b3;
+}
+
+/*--------------------------------------------------------------
+# All padding element
+--------------------------------------------------------------*/
+.pd-0 {
+	padding: 0 !important;
+}
+.pd-left-0 {
+	padding-left: 0;
+}
+.mt-40 {
+	margin-top: 40px;
+}
+@media only screen and (max-width: 992px) {
+	.mar-b-25 {
+		margin-bottom: -25px !important;
+	}
+	.mb-15 {
+		//margin-bottom: 15px;
+	}
+}
+.mb-90 {
+	margin-bottom: 90px !important;
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 0 !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	/* .settings {
+		.col-md-3.pr-0 {
+			padding-right: 15px !important;
+		}
+	} */
+	.menu-top {
+		top: -137px !important;
+	}
+	.mt-90.left {
+		top: -90px !important;
+		left: -2px !important;
+	}
+	.m-b-16 {
+		margin-bottom: 16px;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.mb-16 {
+		margin-bottom: 16px;
+	}
+	.mt-90.left {
+		top: -70px !important;
+		left: -10px !important;
+	}
+}
+.p-a {
+	position: static !important;
+}
+
+/*--------------------------------------------------------------
+# All color element
+--------------------------------------------------------------*/
+.bg-w {
+	background: #fff;
+}
+/* =====gray===== */
+.bg-gray {
+  background-color: #ECF0F5 !important;
+}
+.bg-black {
+	background: #222D32;
+}
+
+.pelorous {
+	background: #17a2b8;
+}
+
+.amaranth {
+	background: #DC3545;
+	color: #fff;
+}
+
+.bg-chat-blue {
+    background: #007bff;
+}
+
+.bg-chat-gray {
+    background: #d2d6de;
+}
+.amber {
+	background: #d6b40f;
+}
+
